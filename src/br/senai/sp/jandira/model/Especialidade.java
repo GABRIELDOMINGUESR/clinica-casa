@@ -2,7 +2,7 @@ package br.senai.sp.jandira.model;
 
 public class Especialidade {
 
-    private static int quantidade = 100;
+    private static int contador = 100;
     private Integer codigo;
     private String nome;
     private String descricao;
@@ -15,13 +15,13 @@ public class Especialidade {
     }
 
     private void atualizarCodigo() {
-        this.codigo = quantidade;
-        quantidade++;
+        this.codigo = contador;
+        contador++;
 
     }
 
     public Especialidade() {
-        quantidade++;
+        atualizarCodigo();
     }
 
     // Métodos de acesso getters and setters
@@ -41,8 +41,8 @@ public class Especialidade {
         return descricao;
     }
 
-    public int getQuantidade() {
-        return quantidade;
+    public int getContador() {
+        return contador;
     }
 
     public Integer getCodigo() {

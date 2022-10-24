@@ -35,7 +35,7 @@ public class EspecialidadesPanel extends javax.swing.JPanel {
 
         EspecialedadeText.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
         EspecialedadeText.setForeground(new java.awt.Color(102, 0, 102));
-        EspecialedadeText.setText("Expecialidade");
+        EspecialedadeText.setText("Especialidade");
         jPanelEspecialidade.add(EspecialedadeText);
         EspecialedadeText.setBounds(20, 10, 180, 20);
 
@@ -111,14 +111,35 @@ public class EspecialidadesPanel extends javax.swing.JPanel {
 
 
     private void buttonAlterarEspecialiddadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAlterarEspecialiddadeActionPerformed
+        linha = tableEspecialidade.getSelectedRow();
+        if (linha != -1) {
+            editar();
 
+        } else {
+            JOptionPane.showMessageDialog(
+                    this,
+                    "Porfavor, selecione a linha!!",
+                    "Especialidade",
+                    JOptionPane.WARNING_MESSAGE);
+        }
 
     }//GEN-LAST:event_buttonAlterarEspecialiddadeActionPerformed
 
-    private void buttonAdicionarEspecialdadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAdicionarEspecialdadeActionPerformed
+    private void editar() {
+        Especialidade especialidade = EspecialdadaDAO.getEspecialidade(getCodigo());
 
+        EspecialidadeDialog especialidadeDialog = new EspecialidadeDialog(
+                null,
+                true,
+                TipoOperacao.ALTERAR,
+                especialidade);
 
-    }//GEN-LAST:event_buttonAdicionarEspecialdadeActionPerformed
+        especialidadeDialog.setVisible(true);
+
+        criarTabelaEspecialidade();
+
+    }
+
     private void excluir() {
         int resposta = JOptionPane.showConfirmDialog(
                 this,
@@ -139,6 +160,20 @@ public class EspecialidadesPanel extends javax.swing.JPanel {
         return Integer.valueOf(codigoStr);
 
     }
+
+
+    private void buttonAdicionarEspecialdadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAdicionarEspecialdadeActionPerformed
+
+        EspecialidadeDialog especialidadeDialog = new EspecialidadeDialog(
+                null,
+                true,
+                TipoOperacao.ADICIONAR,
+                null);
+
+        especialidadeDialog.setVisible(true);
+
+        criarTabelaEspecialidade();
+    }//GEN-LAST:event_buttonAdicionarEspecialdadeActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

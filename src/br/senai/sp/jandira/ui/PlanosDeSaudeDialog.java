@@ -98,6 +98,11 @@ public class PlanosDeSaudeDialog extends javax.swing.JDialog {
         textTipoDoPlano.setBounds(30, 190, 500, 30);
 
         buttonCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/senai/sp/jandira/imagens/cancel32.png"))); // NOI18N
+        buttonCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonCancelarActionPerformed(evt);
+            }
+        });
         jPanel2.add(buttonCancelar);
         buttonCancelar.setBounds(370, 260, 80, 60);
 
@@ -130,6 +135,10 @@ public class PlanosDeSaudeDialog extends javax.swing.JDialog {
         }
 
     }//GEN-LAST:event_buttonSalvarActionPerformed
+
+    private void buttonCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCancelarActionPerformed
+        dispose();
+    }//GEN-LAST:event_buttonCancelarActionPerformed
 
     private void atualizar() {
         planoDeSaude.setOperadora(textNomeDaOperadora.getText());
