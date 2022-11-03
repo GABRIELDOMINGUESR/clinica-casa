@@ -23,8 +23,8 @@ public class HomeFrame extends javax.swing.JFrame {
     public HomeFrame() {
 
         initComponents();
-        PlanoDeSaudeDAO.criarPlanosDeSaudeTeste();
-        EspecialdadaDAO.crriarEspecialidadesTeste();
+        PlanoDeSaudeDAO.lerListaDePlanoDeSaude();
+        EspecialdadaDAO.lerListaDeEspecialidade();
         initPanels();
 
     }

@@ -89,7 +89,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/br/senai/sp/jandira/imagens/delete32-2.png"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Excluir plano de sa&#xfa;de selecionado"/>
+            <Property name="toolTipText" type="java.lang.String" value="Excluir Especialidade selecionado"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonExcluirEspecialidadeActionPerformed"/>
@@ -105,7 +105,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/br/senai/sp/jandira/imagens/edit32.png"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Editar plano de sa&#xfa;de selecionado"/>
+            <Property name="toolTipText" type="java.lang.String" value="Editar Especialidade selecionado"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAlterarEspecialiddadeActionPerformed"/>
@@ -121,7 +121,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/br/senai/sp/jandira/imagens/add32.png"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Adicionar plano de sa&#xfa;de"/>
+            <Property name="toolTipText" type="java.lang.String" value="Adicionar Especialidade"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAdicionarEspecialdadeActionPerformed"/>

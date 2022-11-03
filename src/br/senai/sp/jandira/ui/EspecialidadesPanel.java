@@ -56,7 +56,7 @@ public class EspecialidadesPanel extends javax.swing.JPanel {
         scrollTableEspecialidade.setBounds(20, 40, 905, 240);
 
         buttonExcluirEspecialidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/senai/sp/jandira/imagens/delete32-2.png"))); // NOI18N
-        buttonExcluirEspecialidade.setToolTipText("Excluir plano de saúde selecionado");
+        buttonExcluirEspecialidade.setToolTipText("Excluir Especialidade selecionado");
         buttonExcluirEspecialidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonExcluirEspecialidadeActionPerformed(evt);
@@ -66,7 +66,7 @@ public class EspecialidadesPanel extends javax.swing.JPanel {
         buttonExcluirEspecialidade.setBounds(700, 294, 70, 60);
 
         buttonAlterarEspecialiddade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/senai/sp/jandira/imagens/edit32.png"))); // NOI18N
-        buttonAlterarEspecialiddade.setToolTipText("Editar plano de saúde selecionado");
+        buttonAlterarEspecialiddade.setToolTipText("Editar Especialidade selecionado");
         buttonAlterarEspecialiddade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonAlterarEspecialiddadeActionPerformed(evt);
@@ -76,7 +76,7 @@ public class EspecialidadesPanel extends javax.swing.JPanel {
         buttonAlterarEspecialiddade.setBounds(780, 294, 70, 60);
 
         buttonAdicionarEspecialdade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/senai/sp/jandira/imagens/add32.png"))); // NOI18N
-        buttonAdicionarEspecialdade.setToolTipText("Adicionar plano de saúde");
+        buttonAdicionarEspecialdade.setToolTipText("Adicionar Especialidade");
         buttonAdicionarEspecialdade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonAdicionarEspecialdadeActionPerformed(evt);
