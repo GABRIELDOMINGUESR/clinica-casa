@@ -86,7 +86,7 @@ public class EspecialidadesPanel extends javax.swing.JPanel {
         buttonAdicionarEspecialdade.setBounds(860, 294, 70, 60);
 
         add(jPanelEspecialidade);
-        jPanelEspecialidade.setBounds(0, 0, 945, 370);
+        jPanelEspecialidade.setBounds(10, 10, 940, 370);
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonExcluirEspecialidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonExcluirEspecialidadeActionPerformed
