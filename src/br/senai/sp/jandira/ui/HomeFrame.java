@@ -5,8 +5,7 @@ import br.senai.sp.jandira.dao.EspecialdadaDAO;
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JPanel;
-import javax.swing.JTable;
-import javax.imageio.plugins.jpeg.JPEGQTable;
+
 
 public class HomeFrame extends javax.swing.JFrame {
 

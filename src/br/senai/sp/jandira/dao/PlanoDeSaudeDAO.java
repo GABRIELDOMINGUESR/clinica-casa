@@ -154,5 +154,29 @@ public class PlanoDeSaudeDAO { // Simular nosso banco de dados
         return tableModel;
 
     }
+    public static void lerListaDePlanoDeSaude() {
+        try {
+            BufferedReader br = Files.newBufferedReader(PATH);
+
+            String linha = br.readLine();
+
+            while (linha != null && !linha.isEmpty()) {
+                String[] linhaVetor = linha.split(";");
+               PlanoDeSaude novoPlanodeSaude = new PlanoDeSaude(
+                        Integer.valueOf(linhaVetor[0]),
+                        linhaVetor[1],
+                        linhaVetor[2]);
+                planos.add(novoPlanodeSaude);
+                linha = br.readLine();
+
+            }
+            br.close();
+
+        } catch (IOException ex) {
+            JOptionPane.showMessageDialog(null, "Ocorreu um Erro ao ler o arquivo", "Erro de leitura", JOptionPane.ERROR_MESSAGE);
+        }
+
+    }
+    
 
 }
